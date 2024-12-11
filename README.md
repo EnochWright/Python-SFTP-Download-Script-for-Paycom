@@ -1,6 +1,6 @@
 This python script can be ran to download files from a Paycom SFTP connection. 
 It includes the ability to download multiple files (using file name string) and it automatically pulls only the most recent file. 
-It then compares the file contents and only if there is a change does it then move the file to a directory (where then you can use other programs or scripts to process the data).
+It then compares the file contents (using a checksum file) and only if there is a change does it then move the file to a directory (where then you can use other programs or scripts to process the data).
 It sends an email when complete to update you on the status of the process.
 I have it setup to run daily using Task Scheduler in Microsoft Windows, but it can be ran manually or included in other scripts.
 If directories don't exist or if there are problems, the script includes error checking.
